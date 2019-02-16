@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".carousel-welcome").slick({autoplay:!0,prevArrow:"",nextArrow:""})});

@@ -1,0 +1,52 @@
+.welcome .carousel-welcome img {
+  cursor: pointer; }
+
+.welcome .title {
+  font-size: 1.5em;
+  letter-spacing: 1.5px; }
+
+.welcome .icon:hover {
+  opacity: 1; }
+
+.welcome .nav-link:hover {
+  color: #00d1b2 !important; }
+
+.text-through {
+  text-decoration: line-through; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; }
+
+.subtitle {
+  font-size: 1.5em; }
+
+.container-top {
+  margin-top: 8rem; }
+
+.opacity {
+  opacity: .85; }
+
+.line {
+  display: inline-block;
+  border-radius: 1px; }
+
+.line-sm {
+  width: 7px;
+  height: 3px; }
+
+.line-md {
+  width: 14px;
+  height: 3px; }
+
+.line-lg {
+  width: 21px;
+  height: 3px; }
+
+.icon-lg {
+  font-size: 10em;
+  opacity: .03; }
+  .icon-lg:hover {
+    opacity: .03; }
