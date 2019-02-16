@@ -1,51 +1,23 @@
 $green: #00d1b2;
 
+@import "bootstrap/bootstrap.scss";
+@import "utilities";
 @import "components/welcome";
+@import "components/contact";
+
+/* Plugins */
+@import "slick.scss";
+@import "animate.scss";
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
-.subtitle {
-    font-size: 1.5em;
-}
-
-.container-top {
-    margin-top: 8rem;
-}
-
-.opacity {
-    opacity: .85;
-}
-
-.line {
-    display: inline-block;
-    border-radius: 1px;
-}
-
-.line-sm {
-    width: 7px;
-    height: 3px;
-}
-
-.line-md {
-    width: 14px;
-    height: 3px;
-}
-
-.line-lg {
-    width: 21px;
-    height: 3px;
-}
-
-.icon-lg {
-    font-size: 10em;
-    opacity: .03;
-    &:hover {
-        opacity: .03;
-    }
+p {
+    font-size: 1.1em;
 }

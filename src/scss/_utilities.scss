@@ -1,0 +1,75 @@
+/* Mixin */
+
+@mixin background-image($image) {
+    background-image: url($image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* End mixin */
+
+.title {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+.opacity {
+    opacity: .85;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.line {
+    display: inline-block;
+    border-radius: 1px;
+}
+
+.line-sm {
+    width: 7px;
+    height: 3px;
+}
+
+.line-md {
+    width: 14px;
+    height: 3px;
+}
+
+.line-lg {
+    width: 21px;
+    height: 3px;
+}
+
+.icon-background {
+    width: 35%;
+    opacity: .2;
+}
+
+.btn {
+    box-shadow: none !important;
+}
+
+.container-top {
+    margin-top: 15rem;
+}
+
+@media (max-width: 576px) {
+    .container-top {
+        margin-top: 7rem;
+    }
+
+    .icon-background {
+        width: 50%;
+        opacity: .2;
+    }
+}
+
+.about-background {
+    @include background-image('../../public/images/background-about.jpg');
+}

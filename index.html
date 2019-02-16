@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web para fotografo(a)">
+    <meta name="author" content="Erick Huamani">
     <title>Photographer</title>
-    <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Images -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins" rel="stylesheet">
     <link rel="stylesheet" href="public/css/app.css">
 </head>
 
@@ -20,15 +22,15 @@
     <header class="container-fluid welcome">
         <div class="row">
             <!-- Carousel -->
-            <div class="col-lg-5 carousel-welcome col-xl-6 pl-0 pr-0 d-none d-lg-block">
+            <div class="col-md-6 carousel-welcome pl-0 pr-0 d-none d-md-block">
                 <img src="public/images/slide-1.jpg" alt="Slide 1" class="img-fluid vh-100 opacity">
                 <img src="public/images/slide-2.jpg" alt="Slide 2" class="img-fluid vh-100 opacity">
                 <img src="public/images/slide-3.jpg" alt="Slide 3" class="img-fluid vh-100 opacity">
             </div>
             <!-- End carousel -->
-            <div class="col-lg-7 col-xl-6 col-lg-6">
+            <div class="col-md-6">
                 <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg p-md-5">
+                <nav class="navbar navbar-expand-md p-md-5">
                     <a class="navbar-brand d-md-none text-white" href="#">Erick HL</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,23 +40,20 @@
 
                     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item mr-2 mb-2">
-                                <a class="nav-link text-decoration-none text-white" href="#">Inicio</a>
+                            <li class="nav-item mr-1 mb-3 mb-md-0">
+                                <a class="nav-link text-decoration-none text-white" href="#sobre-mi">Sobre mí</a>
                             </li>
-                            <li class="nav-item mr-2 mb-2">
-                                <a class="nav-link text-decoration-none text-white" href="#">Sobre mí</a>
-                            </li>
-                            <li class="nav-item mr-2 mb-2">
-                                <a class="nav-link text-decoration-none text-white" href="#">Galería</a>
+                            <li class="nav-item mr-1 mb-3 mb-md-0">
+                                <a class="nav-link text-decoration-none text-white" href="#portafolio">Galería</a>
                             </li>
                         </ul>
-                        <button class="btn btn-success rounded-0" type="submit">Contacto</button>
+                        <a href="#contacto" class="btn btn-success rounded-0">Contacto</a>
                     </div>
                 </nav>
                 <!-- End navbar -->
-                <div class="row info h-50 mt-5 mb-5 mb-md-0 d-flex justify-content-center align-items-center">
-                    <div class="col-md-5 border-left-green p-4 p-md-0">
-                        <h1 class="title mt-3">Hola, soy Erick HL</h1>
+                <div class="row info h-50 mt-5 mb-5 mb-md-0 d-flex justify-content-center align-items-center animated fadeIn slow">
+                    <div class="col-lg-12 col-xl-5 border-left-green p-4">
+                        <h1 class="title mt-3">Hola, soy Erick</h1>
                         <p class="text-justify opacity mb-3">
                             Una de las cosas que más amo es capturar
                             y retratar momentos únicos a través del arte de
@@ -71,17 +70,20 @@
                             <!-- Social networks-->
                             <div class="social-networks">
                                 <span class="icon opacity">
-                                    <a href="" class="text-white text-decoration-none">
+                                    <a href="https://codeerick95.github.io/my-portfolio/#/"
+                                        class="text-white text-decoration-none" target="_blank">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </span>
                                 <span class="icon mx-1 opacity">
-                                    <a href="" class="text-white text-decoration-none">
+                                    <a href="https://www.facebook.com/erick.hl.7587"
+                                        class="text-white text-decoration-none" target="_blank">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </span>
                                 <span class="icon opacity">
-                                    <a href="" class="text-white text-decoration-none">
+                                    <a href="https://codeerick95.github.io/my-portfolio/#/"
+                                        class="text-white text-decoration-none" target="_blank">
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </span>
@@ -89,67 +91,237 @@
                             <!-- End social networks -->
                         </div>
                     </div>
-                    <div class="col-md-5 info mt-5 mt-md-0">
+                    <div class="col-lg-12 col-xl-5 info mt-5 mt-md-0">
                         <img src="public/images/photographer.jpg" alt="Photographer image"
                             class="img-fluid rounded-right opacity">
                     </div>
                 </div>
                 <!-- Icon camera -->
-                <span class="icon-lg">
-                    <i class="fas fa-camera-retro"></i>
-                </span>
-                <!-- End icon camera-->
+                <img src="https://img.icons8.com/cotton/2x/compact-camera.png" alt="Camera"
+                    class="icon-background container-top mt-md-0">
             </div>
         </div>
     </header>
     <!-- End welcome -->
     <!-- about -->
-    <section class="container container-top">
-        <div class="row">
-            <div class="col-md-8 d-flex flex-column">
-                <h2 class="subtitle mb-4">Un poco más de mí...</h2>
-                <p class="text-justify opacity pl-5">
-                    Actualmente trabajo de forma <span class="text-through">independiente</span> <span
-                        class="text-success opacity">como Freelancer</span> brindando servicios en distintos eventos
-                    (Matrimonios, conferencias, etc...)
-                </p>
-                <p class="opacity pl-5">
-                    Por el momento solo trabajo en Lima, Perú. Aunque no descarto la posibilidad de viajar, de ser
-                    invitado, claro.
-                </p>
-                <p class="text-justify opacity pl-5">
-                    Tengo más de 10 años de experiencia en el mundo de la fotografía, me siento orgulloso de haber
-                    ganado
-                    distintos premios y de haber sido nominado como mejor fotógrafo del año en 2018.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="line line-sm bg-success animated bounceIn delay-2s infinite"></span>
-                        <span class="line line-md bg-success animated bounceIn delay-4s infinite"></span>
-                        <span class="line line-lg bg-success animated bounceIn delay-5s infinite"></span>
+    <div id="sobre-mi" class="pt-1">
+        <section class="container-fluid container-top">
+            <div class="row">
+                <div class="col-md-7 d-flex flex-column justify-content-between">
+                    <div class="px-5">
+                        <h2 class="subtitle mb-4 text-center text-md-left">Un poco más de mí...</h2>
+                        <p class="opacity text-justify">
+                            Actualmente trabajo de manera independiente
+                            brindando servicios en distintos eventos
+                            (Matrimonios, conferencias, etc...)
+                        </p>
+                        <p class="opacity text-justify">
+                            Por el momento solo trabajo en Lima, Perú. Aunque no descarto la posibilidad de viajar, de
+                            ser
+                            invitado, claro.
+                        </p>
+                        <p class="opacity text-justify">
+                            Tengo más de 10 años de experiencia en el mundo de la fotografía, me siento orgulloso de
+                            haber
+                            ganado
+                            distintos premios y de haber sido nominado como mejor fotógrafo del año en 2018.
+                        </p>
+                        <div>
+                            <span class="line line-sm bg-success animated bounceIn delay-2s infinite"></span>
+                            <span class="line line-md bg-success animated bounceIn delay-4s infinite"></span>
+                            <span class="line line-lg bg-success animated bounceIn delay-5s infinite"></span>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-success rounded-0">Solicitar servicios</a>
+                    <div class="align-self-end pr-5">
+                        <a href="#contacto" class="btn btn-success rounded-0">Solicitar servicios</a>
+                    </div>
+                </div>
+                <div class="col-md-5 about-background opacity">
                 </div>
             </div>
-            <div class="col-md-4 text-right">
-                <span class="icon-lg d-inline-block container-top">
-                    <i class="fas fa-images"></i>
-                </span>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- End about -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    <!-- Gallery -->
+    <div id="portafolio" class="pt-md-1">
+        <section class="container container-top">
+            <div class="text-center">
+                <h2 class="mb-3">Mi trabajo, mi pasión.</h2>
+                <p class="mb-5 opacity">
+                    Aquí muestro algunas de mis mejores fotografías,
+                    <span class="text-success">¡disfrute!</span>
+                </p>
+            </div>
+            <div class="card-columns">
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/14/18/59/u-boat-3997192__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/14/18/59/u-boat-3997192__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/11/20/20/woman-3990680__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/11/20/20/woman-3990680__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/11/20/44/pulpit-3990745__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/11/20/44/pulpit-3990745__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark text-center">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/09/11/44/buddhist-3984946__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/09/11/44/buddhist-3984946__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark text-center">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/04/14/09/road-3974756__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/04/14/09/road-3974756__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2015/11/07/11/55/hiking-1031628__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/07/11/55/hiking-1031628__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark text-right">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/14/00/24/woman-3995590__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/14/00/24/woman-3995590__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2019/02/03/22/31/sunset-3973651__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2019/02/03/22/31/sunset-3973651__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+                <div class="card bg-dark">
+                    <a data-fancybox="gallery"
+                        href="https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121__340.jpg"
+                        data-caption="Lorem ipsum dolor sit amet.">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121__340.jpg"
+                            class="card-img-top" alt="...">
+                    </a>
+                </div>
+            </div>
+            <p class="text-white text-center mt-5 opacity">Puede visitar y seguirme en <a
+                    href="https://codeerick95.github.io/my-portfolio/#/" target="_blank">Instagram</a> para más
+                contenido.</p>
+        </section>
+    </div>
+    <!-- End gallery -->
+
+    <!-- Contact -->
+    <div id="contacto" class="container-fluid container-top p-0 opacity contact">
+        <div class="content w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="w-75 d-flex flex-column p-5">
+                <div class="text-center mb-0">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="mb-3">Conversemos...</h2>
+                        <p class="mb-2">
+                            Vayamos por un café y conversemos sobre su proyecto.
+                        </p>
+                    </div>
+                    <p class="w-50 mx-auto d-none d-md-block mb-0">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam odio ex fugit vitae?
+                        Impedit, eius.
+                    </p>
+                </div>
+                <!-- Lines -->
+                <div class="w-50 mx-auto mb-3">
+                    <span class="line line-sm bg-success animated bounceIn delay-2s infinite ml-3"></span>
+                    <span class="line line-md bg-success animated bounceIn delay-4s infinite"></span>
+                    <span class="line line-lg bg-success animated bounceIn delay-5s infinite"></span>
+                </div>
+                <!-- End lines -->
+                <div class="text-center">
+                    <p>
+                        <span class="icon mr-md-1">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        <span class="mr-3">
+                            dev.erick95@gmail.com
+                        </span>
+                    </p>
+                    <p>
+                        <span class="icon mr-1">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
+                        <span>
+                            924 367 676
+                        </span>
+                    </p>
+                    <div class="social-networks">
+                        <span class="icon opacity">
+                            <a href="https://codeerick95.github.io/my-portfolio/#/"
+                                class="text-white text-decoration-none" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </span>
+                        <span class="icon mx-1 opacity">
+                            <a href="https://www.facebook.com/erick.hl.7587"
+                                class="text-white text-decoration-none mx-2" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </span>
+                        <span class="icon opacity">
+                            <a href="" class="text-white text-decoration-none">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact-->
+
+    <!-- Info -->
+    <div id="developer-info" class="container-fluid p-3">
+        <div class="text-center">
+            <p>
+                Sitio diseñado por <a href="https://codeerick95.github.io/my-portfolio/#/">Erick Huamani</a> -
+                dev.erick95@gmail.com
+            </p>
+            <p class="opacity mb-0">
+                Recursos: Imágenes <a href="https://pixabay.com/">Pixabay</a>
+                Iconos <a href="https://fontawesome.com">Fontawesome</a> <a href="https://icons8.com/">Icons8</a>
+            </p>
+        </div>
+    </div>
+    <!-- End info -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="public/js/scrollreveal.min.js"></script>
+    <script src="public/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="public/js/app.js"></script>
 </body>
 

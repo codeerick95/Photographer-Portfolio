@@ -1,0 +1,13 @@
+.contact {
+    @include background-image('../../public/images/background-contact.jpg');
+    background-position: center 25px;
+    background-attachment: fixed;
+
+    .content {
+        background-color: rgba(52, 58, 64, .85);
+
+        .social-networks .icon {
+            font-size: 1.3em;
+        }
+    }
+}

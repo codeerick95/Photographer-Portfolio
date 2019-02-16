@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){$(".carousel-welcome").slick({autoplay:!0,prevArrow:"",nextArrow:""})});
+"use strict";$(document).ready(function(){$(".carousel-welcome").slick({autoplay:!0,prevArrow:"",nextArrow:""}),ScrollReveal().reveal("#sobre-mi",{delay:1e3}),ScrollReveal().reveal("#portafolio",{delay:1e3}),ScrollReveal().reveal("#contacto",{delay:1e3}),ScrollReveal().reveal("#developer-info",{delay:1e3})});
